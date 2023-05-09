@@ -12,6 +12,8 @@ namespace EjercicioAsync
     {
         static void Main(string[] args)
         {
+
+            //llamamos a la funcion async mediante task.run para que el metodo no sea asyncrrono
             Task.Run(async () => 
             {
 
