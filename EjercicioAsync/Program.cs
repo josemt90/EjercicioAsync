@@ -13,20 +13,23 @@ namespace EjercicioAsync
         static void Main(string[] args)
         {
 
-            //llamamos a la funcion async mediante task.run para que el metodo no sea asyncrrono
-            Task.Run(async () => 
-            {
+            ////llamamos a la funcion async mediante task.run para que el metodo no sea asyncrrono
+            //Task.Run(async () => 
+            //{
 
-                Barman oBarman = new Barman();
+            //    Barman oBarman = new Barman();
 
-                Task<bool> Tbool = oBarman.CalientaSnack();
+            //    Task<bool> Tbool = oBarman.CalientaSnack();
 
-                oBarman.HacerCoctel();
+            //    oBarman.HacerCoctel();
 
 
-                bool boolResult = await Tbool;
+            //    bool boolResult = await Tbool;
 
-            }).GetAwaiter().GetResult();
+            //}).GetAwaiter().GetResult();
+
+            Console.WriteLine("hola");
+            Console.ReadLine();
             
 
             
